@@ -119,3 +119,38 @@
     transform: scale(1.05);
     transition: 0.4s;
 }
+
+@media(max-width:768px){
+    .footer{
+        margin: 50px 70px;
+
+    }
+    .footer-top{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        /* margin-left: 100px; */
+    }
+
+    .logo h2{
+        /* align-items: center; */
+        margin-left: 20px;
+    }
+    /* .footer-email-input {
+        display: none;
+    } */
+
+    /* .footer-subscribe{
+        display: none;
+    } */
+    /* hr{
+        display: none;
+    } */
+    .footer-bottom{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+        line-height: 0;
+    }
+}

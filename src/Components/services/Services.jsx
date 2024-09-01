@@ -17,7 +17,7 @@ const Services = () => {
                     services_data.map((service,index)=>{
                         return(
                             <div key={index} className='services-format'>
-                                <h3>{service.s_no}</h3>
+                                {/* <h3>{service.s_no}</h3> */}
                                 <h2>{service.s_name}</h2>
                                 <p>{service.s_desc}</p>
                             
