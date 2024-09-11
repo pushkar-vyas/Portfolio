@@ -74,22 +74,25 @@
             align-items: center;
             gap: 70px;
             margin: 20px 70px;
+            margin-top: 50px;
     
         }
         .education-title h1{
+            
             padding: 0;
-            font-size: 50px;
+            font-size: 30px;
         }
         .education-title img{
             width: 130px;
             margin-right: -20px;
         }
         .education-j{
-            font-size: 11px;
+            font-size: 8px;
         }
 
         .education-history{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns:  1fr;
+            gap: 10;
         }
     }

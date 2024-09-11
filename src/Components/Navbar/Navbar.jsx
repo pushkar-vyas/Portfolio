@@ -7,16 +7,17 @@ import'./Navbar.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import { NavLink ,Link} from 'react-router-dom'
 import menu_open from '../../assets/menu_open.svg'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 import menu_close from '../../assets/menu_close.svg'
 import { useRef } from 'react'
 
 const Navbar = () => {
-  const[menu,setMenu]=useState("#home")
+  const[menu,setMenu]=useState("#hero")
   const menuRef = useRef();
 
   const openMenu =()=>{
-    menuRef.current.style.right='0';
+    menuRef.current.style.right='10px';
   }
 
   const closeMenu =()=>{
@@ -24,11 +25,12 @@ const Navbar = () => {
   }
 
   return (
-    <div className='head'>
+    <div className='head' id="home">
         <div className="navbar">
             <h2>Pushkar</h2>
             <img src={theme_pattern}/>
-            <img src={menu_open} className='nav-mob-open' onClick={openMenu}/>
+            <GiHamburgerMenu className='nav-mob-open' onClick={openMenu}/>
+            {/* <img src={menu_open} className='nav-mob-open' onClick={openMenu}/> */}
 
             <ul className='nav-menu' ref={menuRef}>
                 {/* <li><AnchorLink className='anchor-link' href='#home'><p onClick={()=>setMenu("home")}>Home</p></AnchorLink>{menu==="home"?<img src={underline}/>:<></>}</li>

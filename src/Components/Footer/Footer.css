@@ -132,25 +132,45 @@
         /* margin-left: 100px; */
     }
 
+    .logo img{
+        z-index: -1;
+        width: 60px;
+        margin-top: 5px;
+        margin-left: 60px;
+    }
+
     .logo h2{
         /* align-items: center; */
         margin-left: 20px;
     }
-    /* .footer-email-input {
-        display: none;
-    } */
 
-    /* .footer-subscribe{
-        display: none;
-    } */
-    /* hr{
-        display: none;
-    } */
+    .footer-top-right{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .footer-email-input{
+        /* display: flex; */
+
+        gap: 10px;
+        padding:10px 20px;
+       
+    }
+    .footer-subscribe{
+        font-size: 20px;
+        padding: 10px 20px;
+        
+    }
     .footer-bottom{
         display: flex;
-        flex-direction: column-reverse;
+        justify-content: space-between;
+        font-size: 10px;
+        font-weight: 700;
+        flex-direction: column;
         align-items: center;
-        margin-bottom: 50px;
-        line-height: 0;
+        margin-bottom: 20px;
+        line-height: 20px;
     }
 }
